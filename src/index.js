@@ -20,17 +20,41 @@ function App() {
 function Avatar() {
   return (
     <div>
-      <img src="landscape.jpg" alt="avatar image" />
+      <img src="landscape.jpg" alt="avatar" className="avatar" />
     </div>
   );
 }
 
 function Intro() {
-  return <h1>Hello Intro</h1>;
+  return (
+    <div>
+      <h1>Sodiq Ganiyu</h1>
+      <p>
+        This is a little paragraph intro about me. This is a little paragraph
+        intro about me .This is a little paragraph intro about me.This is a
+        little paragraph intro about me
+      </p>
+    </div>
+  );
 }
 
 function SkillList() {
-  return <h2>Hello Skills</h2>;
+  return (
+    <div className="skill-list">
+      <Skill btn="Javascript" color="red" />
+      <Skill btn="Javascript" color="red" />
+      <Skill btn="Javascript" color="red" />
+      <Skill btn="Javascript" color="red" />
+    </div>
+  );
+}
+
+function Skill(props) {
+  return (
+    <div>
+      <button className="skill">{props.btn}</button>
+    </div>
+  );
 }
 
 const rootElement = document.getElementById("root");
