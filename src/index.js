@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./styles.css";
+import "./index.css";
 
 function App() {
   return (
@@ -15,6 +15,22 @@ function App() {
       </div>
     </div>
   );
+}
+
+function Avatar() {
+  return (
+    <div>
+      <img src="landscape.jpg" alt="avatar image" />
+    </div>
+  );
+}
+
+function Intro() {
+  return <h1>Hello Intro</h1>;
+}
+
+function SkillList() {
+  return <h2>Hello Skills</h2>;
 }
 
 const rootElement = document.getElementById("root");
